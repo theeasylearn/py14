@@ -1,0 +1,4 @@
+1) write a program to findout area of circle 
+2) write a program to findout area of triangle
+3) write a program to calculate simple interest of given amount,rate,year
+
