@@ -1,3 +1,6 @@
 1) write a program to findout area of circle 
 2) write a program to findout area of triangle
 3) write a program to calculate simple interest of given amount,rate,year
+4) write a program to convert given kilograms into pounds 
+5) write a program to convert given farenheit into celcius 
+6) write a program to create list that has all your favourite dish and add 2 new dish into it. also delete list from 0th position, findout whether list has pavbhaji or not 
