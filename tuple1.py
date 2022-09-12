@@ -9,4 +9,4 @@ print(devtas)
 print(gods + devtas)
 print("position of vishnu devtas ",gods.index('Vishnu'))
 print("count of vishnu ",gods.count('Vishnu'))
-del gods[0]
+del gods[0]ee 
