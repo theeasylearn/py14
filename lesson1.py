@@ -11,3 +11,4 @@ print(""" we are learning python at
       105, eva surbhi, opp akshwarwadi temple,
       waghawadi road, bhavnagar - 364001
 """)
+print("one");   print("two");       print("three")

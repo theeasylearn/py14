@@ -1,17 +1,14 @@
 print("working with variables in python")
-#create variable in python 
-# syntax 
-# variable-name = value 
-name = "the easylearn academy" #create variable name and it has the easylearn academy
-age = 38
-weight = 74.99
+#how to create variable in python 
+#variable-name = value 
+name = "the easylearn academy" #it will create new variable 
+year = 2022 #it will also create new variable
+weight = 75.99
 gender = True 
 print(name)
-print("weight ",weight,"age ",age)
+print(name,weight,gender,year)
+print("you are learning python at",name)
+year = 'two thousand twenty two' 
+print(year)
+gender = 1
 print(gender)
-age = 'thirty eight'
-print(age)
-gender = "male"
-print(gender)
-age = 38
-print(age)
