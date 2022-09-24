@@ -4,3 +4,19 @@
 4) write a program to convert given kilograms into pounds 
 5) write a program to convert given farenheit into celcius 
 6) write a program to create list that has all your favourite dish and add 2 new dish into it. also delete list from 0th position, findout whether list has pavbhaji or not 
+
+decision making statements
+-----------------------------------------------------------------
+simple if decision making 
+
+1) write a program to findout power of given base and exponent. if base or exponent is negative number then convert it into positive number Maths.pow
+
+2) write a program to findout whether given shape is square or not. if shape is square print message "shape is square". take length and width from user as input 
+
+if else decision making statement 
+
+3) write a program findout largest rectangle from two given rectangle length & width. 
+
+4) write a program to accept run of batsman from user. if user has scored more then 100 run then print message it is century, congratulation. otherwise print message Good try.
+
+5) write a program to accept user's age and then print message your are eligible for voting and driving licence if user age is above 17 otherwise print message "Good day children"
