@@ -59,3 +59,10 @@ write a program to print following pattern
 write a program to print following pattern 
 1 8 27 64 125 ..... 1000
 
+#write a program to findout sum of all the number between given range 
+start = 1000 stop = 2000
+
+#write a program to findout power of given base and exponent using loop  
+base = 2, exponent = 5 power 32
+base = 3, exponent = 4 power 81
+
