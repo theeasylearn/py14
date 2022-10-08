@@ -86,4 +86,28 @@ nested loop
     * * *
       * *
         *
-        
+4)
+1 2 3 4 5
+  2 3 4 5
+    3 4 5
+      4 5
+        5 
+5)
+1 0 1 0 1 
+  1 0 1 0
+    1 0 1
+      1 0
+        1 
+6)
+      *
+     **
+    ***
+   ****
+  ***** 
+  7) write a program to findout whether given number is perfect no or not 
+
+  8) write a program to findout perfect no between 1 t0 1000
+
+  9) write a program to findout whether given no is prime no or not.
+
+  10) write a program to findout prime numbers between given range.
