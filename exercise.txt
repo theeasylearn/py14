@@ -111,3 +111,8 @@ nested loop
   9) write a program to findout whether given no is prime no or not.
 
   10) write a program to findout prime numbers between given range.
+
+  for loop 
+  write a program to count negative and positive number in given list 
+  numbers = [100,-5,125,-4,123,120,1000]
+  
