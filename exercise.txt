@@ -116,3 +116,10 @@ nested loop
   write a program to count negative and positive number in given list 
   numbers = [100,-5,125,-4,123,120,1000]
   
+  write a program to count words in given string 
+  line = this is apple.
+  words = 3
+
+   write a program to digits in given string
+  line = ankit3385@gmail.com
+  digit = 4
