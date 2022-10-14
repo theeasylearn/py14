@@ -141,3 +141,11 @@ output 11,13,15 .... 19
 write a program to findout factorial of given number using for loop  
 number = 5
 output = 120
+
+function
+write a program to create following function 
+  add(num1,num2) and it will make addition of two number and display answer
+  sub(num1,num2) and it will make substraction using two number and display answer
+  mul(num1,num2) and it will make multiplication using two number and display answer
+  div(num1,num2) and it will make division using two number and display answer
+
