@@ -149,3 +149,6 @@ write a program to create following function
   mul(num1,num2) and it will make multiplication using two number and display answer
   div(num1,num2) and it will make division using two number and display answer
 
+write a program to create function that return time with AM with PM WORD.
+write a program to create function that return date with following format.
+15-oct-2022
