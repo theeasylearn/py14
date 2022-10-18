@@ -152,3 +152,7 @@ write a program to create following function
 write a program to create function that return time with AM with PM WORD.
 write a program to create function that return date with following format.
 15-oct-2022
+
+write a program that return interest from given amount,rate, year (all arguments are required)
+
+write a program that return area of rectangle from given length & width (width is optional) 
