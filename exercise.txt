@@ -156,3 +156,13 @@ write a program to create function that return date with following format.
 write a program that return interest from given amount,rate, year (all arguments are required)
 
 write a program that return area of rectangle from given length & width (width is optional) 
+
+write a program that has getBMI() that return bmi from given height and weight (use concept of keyword arguments)
+
+write a program that return interest from given amount,rate, year (all arguments are required and keyword arguments)
+
+write a program that return minimum & maximum both number from given 3 arguments. (use multiple return value concept)
+
+write a program that return square and qube both of given number (use multiple return value concept)
+
+
