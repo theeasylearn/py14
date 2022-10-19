@@ -166,3 +166,7 @@ write a program that return minimum & maximum both number from given 3 arguments
 write a program that return square and qube both of given number (use multiple return value concept)
 
 
+Arbitrary Argument functions
+
+write a program to findout & return average from using Arbitrary Argument functions of all given numbers 
+write a program to findout & return count of odd value and even value from using Arbitrary Argument functions of all given numbers 
