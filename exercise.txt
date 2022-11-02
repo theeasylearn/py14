@@ -179,3 +179,13 @@ exercise
 input = 54321
 output = five four three two one 
 
+date and time related function
+-------------------------------------
+Print Current Date in following format using decision making statements
+02-January-2023
+
+Print Current Date in following format without decision making statements & external modules
+02-January-2023
+
+write a program to findout elder person from two person's given birthdate 
+
