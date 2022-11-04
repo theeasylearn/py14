@@ -189,3 +189,5 @@ Print Current Date in following format without decision making statements & exte
 
 write a program to findout elder person from two person's given birthdate 
 
+write a program to findout gap between given two date & time in hours using timestamp 
+
