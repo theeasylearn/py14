@@ -191,3 +191,16 @@ write a program to findout elder person from two person's given birthdate
 
 write a program to findout gap between given two date & time in hours using timestamp 
 
+modules 
+---------------------------------------------
+create module which has following functions 
+  GetOTP()
+    return 6 digit otp 
+  GetCountry()
+    which should return any one country from asia 
+  GetCountres()
+    which should return any 3 coutries from asia   
+  GeneratePassword(length)
+    which should return randomly generated alphanumeric password of given length
+      example
+        A0xt2yB4Zn9g

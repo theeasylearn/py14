@@ -1,13 +1,12 @@
 #module 
 def GetSquare(number):
-    temp = number * number
+    temp = number * number * number
     return temp 
 def GetQube(number):
-    temp = GetSquare(number) * number
+    temp =  GetSquare(number) * number
     return temp 
 def sum(*numbers):
-    total = 0
+    total=0
     for item in numbers:
-        total=total + item 
-    return total 
-
+        total = total + item
+    return total

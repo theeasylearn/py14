@@ -1,12 +1,12 @@
 #example of how to call our own modules
 import mymath
-number = int(input("enter number"))
-square = mymath.GetSquare(number)
-print(f"square of given number is {square}")
+number = int(input("Enter number"))
+result = mymath.GetSquare(number)
+print(f"square is {result}")
 
-qube = mymath.GetQube(number)
-print(f"qube of given number is {qube}")
+result = mymath.GetQube(number)
+print(f"qube is {result}")
 
-total = mymath.sum(10,20,30,40,50,100)
-print(f"total of given number is {total}")
+total = mymath.sum(10,20,30,50,100,200,1000,2000,10000,25000,125000)
+print(f"total is {total}")
 
