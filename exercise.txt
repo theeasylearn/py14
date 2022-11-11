@@ -198,7 +198,7 @@ create module which has following functions
     return 6 digit otp 
   GetCountry()
     which should return any one country from asia 
-  GetCountres()
+  GetCountries()
     which should return any 3 coutries from asia   
   GeneratePassword(length)
     which should return randomly generated alphanumeric password of given length
