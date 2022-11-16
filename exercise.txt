@@ -204,3 +204,9 @@ create module which has following functions
     which should return randomly generated alphanumeric password of given length
       example
         A0xt2yB4Zn9g
+        
+exceptional handling 
+-------------------------------
+    write a program to findout bmi of user using given weight and height with exceptional handling 
+    write a program to findout factorial of given number exceptional handling 
+    write a program to convert dd-mm-YYYY date into YYYY-mm-dd format with exceptional handling mechanism 
