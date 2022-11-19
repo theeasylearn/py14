@@ -210,3 +210,6 @@ exceptional handling
     write a program to findout bmi of user using given weight and height with exceptional handling 
     write a program to findout factorial of given number exceptional handling 
     write a program to convert dd-mm-YYYY date into YYYY-mm-dd format with exceptional handling mechanism 
+
+file management
+  write a program to accept file name from user. if file exists ask user whether to write content into it or add new content into it 
