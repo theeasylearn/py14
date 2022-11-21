@@ -212,4 +212,15 @@ exceptional handling
     write a program to convert dd-mm-YYYY date into YYYY-mm-dd format with exceptional handling mechanism 
 
 file management
-  write a program to accept file name from user. if file exists ask user whether to write content into it or add new content into it 
+--------------------------------
+  write a program to accept file name from user. if file exists ask user whether to write content into it or add new content into it.
+
+  write a program to accept two file names from user. merge both file content into new file. also accept new file name from user. 
+
+  write a program to read content of given file in reverse order. 
+  fruits.txt
+  apple banana mango 
+  mango banana apple 
+
+  
+
