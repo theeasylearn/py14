@@ -222,5 +222,18 @@ file management
   apple banana mango 
   mango banana apple 
 
+OOP
+
+1) create class Bird and it should have following methods 
+  fly()
+  eat()
+  sing()
+
+1) create class Email and it should have following methods 
+  SetSubject()
+  AddAttrachment()
+  AddRecepient()
+  SendMail()
+
   
 
