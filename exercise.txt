@@ -229,11 +229,21 @@ OOP
   eat()
   sing()
 
-1) create class Email and it should have following methods 
+2) create class Email and it should have following methods 
   SetSubject()
   AddAttrachment()
   AddRecepient()
   SendMail()
 
   
+instance variable
+3) create class SimpleInterest that has following methods 
+  setAmount(amt)
+  setRate(rat)
+  setYear(yr)
+  getInterest() which return simple Interest
 
+4) create class Cyliender that has following methods 
+    setRadius(r)
+    setHeight(h)
+    getSurfaceArea() which return simple Interest
