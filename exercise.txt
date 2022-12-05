@@ -251,3 +251,18 @@ instance variable
 5) create example no 3 using constructor 
 6) create example no 4 using constructor 
 7) create example no 2 using constructor 
+
+single level inheritance
+8 create single level inheritance example which has two class (each has constructor)
+    1) kg class 
+        has method getKg which return kg of given grams 
+    2) Ton class  inherit kg class 
+        has method getTon() which return Ton of given grams 
+
+2 create multilevel inheritance example which has two class (each has constructor)
+    1) kg class 
+        has method getKg which return kg of given grams 
+    2) Ton class  inherit kg class 
+        has method getTon() which return Ton of given grams
+    3) MetricTon class  inherit kg class 
+        has method getMTC() which return MetricTon of given grams
