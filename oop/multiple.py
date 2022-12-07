@@ -1,4 +1,4 @@
-# real world example of multiple inheritance
+# real world example of multiple & hybrid inheritance
 class KB:
     def __init__(self,bytes):
         self.bytes = bytes 
