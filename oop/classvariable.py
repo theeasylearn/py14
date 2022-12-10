@@ -17,9 +17,6 @@ b1 = Book('secret',600)
 b2 = Book('the atomic habit',500)
 b1.display()
 b2.display()
-
 b1.setPublisher('MoonLight Publisher')
 b1.display()
 b2.display()
-
-

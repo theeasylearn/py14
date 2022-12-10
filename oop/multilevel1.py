@@ -6,7 +6,7 @@ class Human:
         print("I can talk")
     def eat(self):
         print("I can eat")
-    def WhatICanDo(self):
+    def WhatICanDo(self): 
         self.walk()
         self.talk()
         self.eat()
@@ -32,8 +32,7 @@ class Developer(Student):
         super().WhatICanDo()
         self.code()
         self.debug()
-    
-        
+       
 #object-name = className()
 d1 = Developer()
 d1.WhatICanDo()
