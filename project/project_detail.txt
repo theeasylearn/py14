@@ -1,0 +1,19 @@
+Project
+=================================================
+billing application
+type desktop based console application
+this application will be used to maintain stock and generate bills for show owners who sales goods like cake, medicine, cloaths, FMCG products, hardware
+--------------------------
+2 main module 
+    Product management 
+        add new product 
+        delete existing product 
+        edit product 
+        view product 
+    bill management
+        add product into bill 
+        delete  product from bill 
+        view bill items 
+        save and print bill 
+        get details of bill between given date 
+        search for specific bill by name
