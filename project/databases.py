@@ -44,14 +44,14 @@ class DBOperation:
             elif error.errno == 1064:
                 print("invalid sql query")
             return None
+    #this method is used to execute insert, update, delete query
     def RunQuery(self,sql,values=None):
         try:
             mycursor = self.db.cursor()
-            if values!=None:
-                mycursor.execute(sql,values)
-            else:
+            if values==None:
                 mycursor.execute(sql)
-        
+            else:
+                mycursor.execute(sql,values)
             self.db.commit()
             print("query executed sucessfully")
             print("no of row effected ",mycursor.rowcount)
