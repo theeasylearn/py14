@@ -69,20 +69,70 @@ def Bill():
         elif ModuleChoice==2:
             BillChoice = -1
             while BillChoice!=0:
-                print(" press to add product into bill ")
-                print(" press to delete  product from bill ")
-                print(" press to view bill items ")
-                print(" press to save and print bill ")
-                print(" press to get details of bill between given date ")
-                print(" press to search for specific bill by name")
-                print("press 0 to exit to main menu ")
+                print(" press 1 to add product into bill ")
+                print(" press 2 to delete  product from bill ")
+                print(" press 3 to view bill items ")
+                print(" press 4 to save and print bill ")
+                print(" press 5 to get details of bill between given date ")
+                print(" press 6 to search for specific bill by name")
+                print("press  0 to exit to main menu ")
                 BillChoice = int(input("Enter your choice"))
                 if BillChoice==1:
-                    print("here we will add product into bill")
+                    DisplayProduct()
+                    productid = int(input("Enter product id"))
+                    sql = "select price,stock from product where id=%s"
+                    data = [productid]
+                    table = db.FetchRow(sql,data)
+                    size = len(table)
+                    if size == 0:
+                        print("product not found")
+                    else:
+                        print("Product found")
+                        for row in table:
+                            stock = row['stock']
+                            price = row['price']
+                        quantity = int(input("Enter quantity"))
+                        if quantity>stock:
+                            print("not enough stock")
+                        else:
+                            sql = "insert into bill_product (productid,quantity,price,billid) values (%s,%s,%s,%s)"
+                            data = [productid,quantity,price,0]
+                            db.RunQuery(sql,data)
+                            
+                            sql = "update product set stock=stock-%s where id=%s"
+                            data = [quantity,productid]
+                            db.RunQuery(sql,data)
+                            print("product added into bill")
+                            
                 elif BillChoice==2:
-                    print("here we will delete product from bill")
+                    DisplayProduct()
+                    productid = int(input("Enter product id"))
+                    sql = "select price,stock from product where id=%s"
+                    data = [productid]
+                    table = db.FetchRow(sql,data)
+                    size = len(table)
+                    if size == 0:
+                        print("product not found")
+                    else:
+                        print("Product found")
+                        sql = "select quantity from bill_product where productid=%s and billid=%s"
+                        data = [productid,0]
+                        table2 = db.FetchRow(sql,data)
+                        for row in table2:
+                            quantity = row['quantity']
+                        
+                        sql = "update product set stock=stock+%s where id=%s"
+                        data = [quantity,productid]
+                        db.RunQuery(sql,data)
+                        
+                        sql = "delete from bill_product where productid=%s and billid=%s"
+                        data = [productid,0]
+                        db.RunQuery(sql,data)
+                        print("product removed from bill")
+                        
                 elif BillChoice==3:
-                    print("here we will view product of bill")
+                    sql = ""
+                    
                 elif BillChoice==4:
                     print("here we will save and print bill")
                 elif BillChoice==5:
