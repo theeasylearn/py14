@@ -131,8 +131,18 @@ def Bill():
                         print("product removed from bill")
                         
                 elif BillChoice==3:
-                    sql = ""
-                    
+                    sql = "select p.id as id,quantity,b.price as price ,name from bill_product as b, product as p where b.productid=p.id and billid=%s"
+                    data = [0]
+                    table = db.FetchRow(sql,data)
+                    print(f"{'':8}{'id':2}|{'name':43}{'price':17}{'quantity':12}")
+                    print("-"*140)
+                    billtotal=0
+                    for row in table:
+                        output = f"{row['id']:10} {row['name']:32}{row['price']:17} {row['quantity']:12}"
+                        print(output)
+                        billtotal += row['price']  * row['quantity']
+                    print("-"*140)
+                    print(f"Grand Total = {'':39}",billtotal)
                 elif BillChoice==4:
                     print("here we will save and print bill")
                 elif BillChoice==5:
