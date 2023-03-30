@@ -1,4 +1,6 @@
 import databases as mydb
+import datetime
+
 db = mydb.DBOperation("py11")
 def DisplayProduct():
     sql = "select * from product order by name"
@@ -145,6 +147,39 @@ def Bill():
                     print(f"Grand Total = {'':39}",billtotal)
                 elif BillChoice==4:
                     print("here we will save and print bill")
+                    #check is there any pending product in bill_product table or not
+                    sql = "select id from bill_product where billid=%s"
+                    data = [0]
+                    table = db.FetchRow(sql,data)
+                    size = len(table)
+                    print(size)
+                    if size==0:
+                        print("no product found in bill")
+                    else:
+                        customername = input("Enter buyer name")
+                        email = input("Enter buyer email address")
+                        print("Press 1 for cash bill")
+                        print("Press 0 for credit bill")
+                        iscash = int(input("enter your choice"))
+                        sql = "SELECT sum(quantity*price) as total FROM `bill_product` where billid=%s"
+                        data = [0]
+                        table = db.FetchRow(sql,data)
+                        for row in table:
+                            total = row['total']
+                        print(total)
+                        CurrentDate = datetime.date.today() #return date in YYYY-MM-DD
+                        print(CurrentDate)
+                        sql = "insert into bill (customername,billdate,amount,iscash,email) values(%s,%s,%s,%s,%s)"
+                        data = [customername,CurrentDate,total,iscash,email]
+                        db.RunQuery(sql,data)
+                        sql = "SELECT max(id) as last_bill_id FROM `bill`"
+                        table = db.FetchRow(sql)
+                        for row in table:
+                            last_bill_id = row['last_bill_id']
+                        sql ="update bill_product set billid=%s where billid=%s"
+                        data = [last_bill_id,0]
+                        db.RunQuery(sql,data)
+                        print("Bill Saved successfully")
                 elif BillChoice==5:
                     print("here we will get details of bill between given date  ")
                 elif BillChoice==6:
@@ -158,5 +193,4 @@ def Bill():
             return 
         else:
             print("invalid choice")
-            
 Bill()
