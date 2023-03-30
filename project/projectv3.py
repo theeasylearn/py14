@@ -1,5 +1,7 @@
 import databases as mydb
 import datetime
+import common_function as cf 
+from datetime import datetime
 
 db = mydb.DBOperation("py11")
 def DisplayProduct():
@@ -9,6 +11,15 @@ def DisplayProduct():
     print("-"*140)
     for row in table:
         output = f"{row['id']:10} {row['name']:32} {row['detail']:55} {row['price']:17} {row['stock']:12}"
+        print(output)
+def DisplayBill(sql,data):
+    table = db.FetchRow(sql,data)
+    flag = ['Credit','Cash']
+    print(f"{'':8}{'id':2}|{'customername':64}{'bill date':30}{'amount':8}{'sale type':10}")
+    print("-"*140)
+    for row in table:
+        mydate = cf.ConvertToDMY(row['billdate'])
+        output = f"{row['id']:10} {row['customername']:64} {mydate:20} {row['amount']:15} {flag[row['iscash']]:10}"
         print(output)
 def Bill():
     sql = None
@@ -182,8 +193,19 @@ def Bill():
                         print("Bill Saved successfully")
                 elif BillChoice==5:
                     print("here we will get details of bill between given date  ")
+                    sql = "SELECT * FROM `bill` WHERE date(`billdate`)>=%s and date(`billdate`)<=%s"
+                    startdate = input("Enter bill start date (dd-mm-YYYY)")
+                    enddate = input("Enter bill end date (dd-mm-YYYY)")
+                    startdate = datetime.strptime(startdate,"%d-%m-%Y").strftime("%Y-%m-%d")
+                    enddate = datetime.strptime(enddate,"%d-%m-%Y").strftime("%Y-%m-%d")
+                    data = [startdate,enddate] 
+                    DisplayBill(sql,data)
                 elif BillChoice==6:
-                    print("here we will  search for specific bill by name")
+                    name = input("Enter customer name")
+                    sql = "select * from bill where customername like %s order by id desc"
+                    name = f"%{name}%"
+                    data = [name]
+                    DisplayBill(sql,data)
                 elif BillChoice==0:
                     print("exit to main menu")   
                 else:
